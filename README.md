@@ -6,6 +6,8 @@ https://www.kaggle.com/datasets/pavlofesenko/titanic-extended
 
 ##PowerQuery
 Read in datafile from data folder so if original sheet is updated at any point workbook will update automatically
+
+
 ![Alt text](image-1.png)
 
 The following edits were made in powerquery:
@@ -16,6 +18,8 @@ The following edits were made in powerquery:
 5. Replaced value in sex (male=Male,female=Female) used match entire cell contents to prevent FeMale edits
 6. Changed data type sibsp and parch for creation of custom column 'Total Relatives'; removed sibsp and parch
 7. Made passenger ID whole number
+
+   
 ![Alt text](image-2.png)
 
 After data was imported added additional column detailing age ranges via IF(AND) formulas
@@ -23,6 +27,8 @@ After data was imported added additional column detailing age ranges via IF(AND)
 ##Dashboard
 Created via 'helper sheet' with pivottables on hidden sheet titled 'Dashboard Feed'
 Created slicers for age classification and sex, slicers are linked to all pivot tables and graphs
+
+
 ![Alt text](image-3.png)
 
 ##Passenger Dashboard
